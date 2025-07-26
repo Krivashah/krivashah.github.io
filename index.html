@@ -2,219 +2,147 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kriva Shah | AI & Data Science Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kriva Shah | AI & DS Engineer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
-      font-family: 'Roboto', sans-serif;
-      background: #121212;
-      color: #e0e0e0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #1B1F6B; /* Persian Blue */
+      color: #f0f0f0;
     }
-
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-
     header {
+      background: linear-gradient(to right, #1B1F6B, #3D2C8D);
+      padding: 40px 20px;
       text-align: center;
-      margin-bottom: 50px;
-    }
-
-    header h1 {
-      font-size: 3rem;
-      color: #00bcd4;
-    }
-
-    header p a {
-      color: #64ffda;
-      margin: 0 10px;
-      font-size: 1.1rem;
-    }
-
-    section {
-      margin-bottom: 50px;
-      padding: 20px;
-      border-radius: 12px;
-      background-color: #1e1e1e;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    }
-
-    h2 {
-      font-size: 1.8rem;
-      color: #03dac6;
-      margin-bottom: 20px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    h2 i {
-      color: #64ffda;
-    }
-
-    .skills-list span {
-      background: #00bcd4;
-      color: #000;
-      border-radius: 20px;
-      padding: 6px 12px;
-      margin: 5px;
-      display: inline-block;
-      font-size: 0.9rem;
-    }
-
-    .job-title, .project-title {
-      font-size: 1.2rem;
-      font-weight: bold;
-      color: #ffffff;
-    }
-
-    .job-time {
-      font-style: italic;
-      color: #b0bec5;
-    }
-
-    ul li {
-      margin-left: 20px;
-      margin-top: 6px;
-    }
-
-    a {
-      text-decoration: none;
-      color: #64ffda;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .project a {
-      cursor: pointer;
-      transition: color 0.3s ease;
-    }
-
-    .project a:hover {
-      color: #03dac6;
-    }
-
-    .tooltip {
-      display: none;
-      position: relative;
-      background-color: #333;
       color: #fff;
-      padding: 10px;
-      border-radius: 6px;
-      margin-top: 5px;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    .container {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    section {
+      margin-bottom: 40px;
+      background-color: #2C2F84;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+    h2 {
+      color: #FFD700;
+      margin-bottom: 10px;
+    }
+    .highlight {
+      color: #4FC3F7;
+    }
+    .skill-tag {
+      display: inline-block;
+      background-color: #FFD700;
+      color: #1B1F6B;
+      padding: 5px 10px;
+      border-radius: 20px;
+      margin: 4px;
+      font-weight: bold;
       font-size: 0.9rem;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
-      animation: fadeIn 0.3s ease-in-out;
     }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-10px); }
-      to { opacity: 1; transform: translateY(0); }
+    .project-item {
+      cursor: pointer;
+      transition: background-color 0.3s ease;
     }
-
-    .project:hover .tooltip {
-      display: block;
+    .project-item:hover {
+      background-color: #444;
     }
-
-    img.icon {
-      width: 20px;
-      height: 20px;
-      vertical-align: middle;
-      margin-right: 8px;
+    .project-desc {
+      display: none;
+      margin-top: 10px;
+      font-size: 0.95rem;
+      color: #ccc;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1B1F6B;
+      color: #ccc;
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
-    <header>
-      <h1><i class="fas fa-robot"></i> Kriva Shah</h1>
-      <p>
-        <a href="mailto:krivayogeshshah@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-        <a href="https://www.linkedin.com/in/kriva-shah" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-        <a href="https://github.com/Krivashah" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-      </p>
-    </header>
+  <header>
+    <h1><i class="fas fa-brain"></i> Kriva Shah</h1>
+    <p>Artificial Intelligence & Data Science Engineer | Turning ideas into intelligent systems</p>
+  </header>
 
+  <div class="container">
     <section>
-      <h2><i class="fas fa-user"></i> Summary</h2>
-      <p>
-        AI & Data Science engineer leveraging Gen AI, machine learning, and scalable cloud solutions to solve real-world challenges.
-        Boosted startup efficiency by 23% using predictive AI tools, optimized systems via Linux/Docker, and implemented end-to-end automation pipelines.
-        Mentored 200+ students in full-stack development, driving community impact through deployable tech solutions.
-      </p>
+      <h2><i class="fas fa-user-graduate"></i> About Me</h2>
+      <p>I’m Kriva Shah, an enthusiastic <span class="highlight">AI & Data Science Engineer</span> from India, passionate about combining algorithms and creativity to solve real-world problems. My work spans from predictive modeling to generative AI, with a keen eye for ethical AI and social impact. Currently, I’m building meaningful tech experiences that bridge data and decision-making.</p>
     </section>
 
     <section>
-      <h2><i class="fas fa-graduation-cap"></i> Education</h2>
-      <p><strong>University of Mumbai</strong> — B.Tech in Artificial Intelligence and Data Science (2023–2027)<br>
-        <em>CGPA: 3.9/4.0</em></p>
-      <p><strong>Relevant Courses:</strong> DSA, Reinforcement Learning, AI Strategy Integration, Digital Systems, Advanced DBMS, Applied Mathematics</p>
+      <h2><i class="fas fa-lightbulb"></i> Projects</h2>
+      <div class="project-item" onclick="toggleDescription(this)">
+        <strong>Gene Compression for Disease Diagnosis</strong>
+        <div class="project-desc">Used PCA and XGBoost to compress 30k gene features and improve classification accuracy for disease prediction. Focused on feature importance and model interpretability.</div>
+      </div>
+      <div class="project-item" onclick="toggleDescription(this)">
+        <strong>AI-powered Medical Assistant</strong>
+        <div class="project-desc">Built with Gemini API and Pinecone, this chatbot retrieves relevant medical information via embeddings and vector search to answer user queries contextually.</div>
+      </div>
+      <div class="project-item" onclick="toggleDescription(this)">
+        <strong>Financial Insights Dashboard</strong>
+        <div class="project-desc">Created an interactive Tableau dashboard to visualize profitability and sales metrics. Integrated SQL-based data segmentation for clarity.</div>
+      </div>
     </section>
 
     <section>
       <h2><i class="fas fa-tools"></i> Skills</h2>
-      <div class="skills-list">
-        <span>LLMs</span><span>TensorFlow</span><span>PyTorch</span><span>NLP/ASR</span><span>XGBoost</span><span>LSTM</span>
-        <span>Kubernetes</span><span>Docker</span><span>Firebase</span><span>Hadoop</span>
-        <span>C</span><span>C++</span><span>Python</span><span>Java</span>
-        <span>Golang</span><span>Angular</span><span>Vue.js</span><span>React</span>
-        <span>Tableau</span><span>PowerBI</span>
+      <div>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Machine Learning</span>
+        <span class="skill-tag">SQL</span>
+        <span class="skill-tag">Pandas</span>
+        <span class="skill-tag">Scikit-Learn</span>
+        <span class="skill-tag">HTML/CSS</span>
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">React (Basics)</span>
+        <span class="skill-tag">Prompt Engineering</span>
+        <span class="skill-tag">Network Security</span>
       </div>
     </section>
 
     <section>
-      <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
-      <div class="job">
-        <p class="job-title">Generative AI Intern — Saukhyam Foundation, Mumbai</p>
-        <p class="job-time">June 2024 – Dec 2024</p>
-        <ul>
-          <li>Built a Gen AI-powered UserVoice Interface using NLP/ASR that boosted merchandising efficiency by 23%.</li>
-          <li>Reduced latency by 18% with Linux-based deployment optimizations and caching strategies.</li>
-          <li>Increased user retention by 56% by implementing dark mode using Tailwind CSS and MUI ThemeProvider.</li>
-        </ul>
-      </div>
-      <div class="job">
-        <p class="job-title">Computer Science Instructor — Alexandra Girls’ English Institution, Mumbai</p>
-        <p class="job-time">Jan 2024 – May 2024</p>
-        <ul>
-          <li>Guided 200+ students to 90% proficiency in Java, Python, and C++ via custom-tailored lesson plans.</li>
-          <li>Led distributed systems workshop, improving student understanding by 40%.</li>
-          <li>Provided individualized mentorship, improving student success rates by 30%.</li>
-        </ul>
-      </div>
+      <h2><i class="fas fa-briefcase"></i> Experience & Contributions</h2>
+      <p>I’ve mentored students in foundational computer science and conducted workshops on AI ethics. As a DSA mentee at Codess.Cafe, I improved algorithmic thinking and peer collaboration. I also created tools to assist financial professionals and deployed machine learning models on cloud platforms for public use.</p>
     </section>
 
     <section>
-      <h2><i class="fas fa-code"></i> Projects</h2>
-      <div class="project">
-        <p class="project-title"><a onclick="toggleTooltip('medbot')">MedBot: AI-Powered Medical Assistant</a></p>
-        <div id="medbot" class="tooltip">Semantic search over 500+ documents, 85% accurate diagnosis, deployed with CI/CD and Docker.</div>
-      </div>
-      <div class="project">
-        <p class="project-title"><a onclick="toggleTooltip('stock')">Stock Price Prediction</a></p>
-        <div id="stock" class="tooltip">Used LSTM to model long-term dependencies in stock market time series with 78% improved accuracy.</div>
-      </div>
-      <div class="project">
-        <p class="project-title"><a onclick="toggleTooltip('bank')">Bank Reconciliation</a></p>
-        <div id="bank" class="tooltip">O(n) mismatch detection algorithm automating CA debit-credit workflows with 90% time savings.</div>
-      </div>
+      <h2><i class="fas fa-id-badge"></i> Contact</h2>
+      <p><i class="fas fa-envelope"></i> <a href="mailto:kriva.shah@gmail.com" style="color: #4FC3F7">kriva.shah@gmail.com</a></p>
+      <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/kriva-shah" style="color: #4FC3F7">linkedin.com/in/kriva-shah</a></p>
+      <p><i class="fab fa-github"></i> <a href="https://github.com/krivashah" style="color: #4FC3F7">github.com/krivashah</a></p>
     </section>
   </div>
 
+  <footer>
+    <p>&copy; 2025 Kriva Shah. Made with 💙 and a love for clean code.</p>
+  </footer>
+
   <script>
-    function toggleTooltip(id) {
-      const tool = document.getElementById(id);
-      tool.style.display = tool.style.display === 'block' ? 'none' : 'block';
+    function toggleDescription(element) {
+      const desc = element.querySelector('.project-desc');
+      desc.style.display = desc.style.display === 'block' ? 'none' : 'block';
     }
   </script>
 </body>
