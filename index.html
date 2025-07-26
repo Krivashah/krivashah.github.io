@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kriva Shah | AI & Data Science Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKB4Imkb9z+zZr7+tGkWQK3N5SQUgH9XG1ZJ4J1nG9X8bJ+d2Yq6drRh+YZ6K1/x2nKGl3P0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
   <style>
     body {
       font-family: 'Roboto', sans-serif;
-      background: linear-gradient(to right, #fdfbfb, #ebedee);
-      color: #333;
+      background: #121212;
+      color: #e0e0e0;
       margin: 0;
       padding: 0;
     }
@@ -29,11 +29,11 @@
 
     header h1 {
       font-size: 3rem;
-      color: #2c3e50;
+      color: #00bcd4;
     }
 
     header p a {
-      color: #2980b9;
+      color: #64ffda;
       margin: 0 10px;
       font-size: 1.1rem;
     }
@@ -42,13 +42,13 @@
       margin-bottom: 50px;
       padding: 20px;
       border-radius: 12px;
-      background-color: #ffffff;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+      background-color: #1e1e1e;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }
 
     h2 {
       font-size: 1.8rem;
-      color: #34495e;
+      color: #03dac6;
       margin-bottom: 20px;
       display: flex;
       align-items: center;
@@ -56,12 +56,12 @@
     }
 
     h2 i {
-      color: #3498db;
+      color: #64ffda;
     }
 
     .skills-list span {
-      background: #3498db;
-      color: #fff;
+      background: #00bcd4;
+      color: #000;
       border-radius: 20px;
       padding: 6px 12px;
       margin: 5px;
@@ -69,19 +69,15 @@
       font-size: 0.9rem;
     }
 
-    .job, .project {
-      margin-bottom: 30px;
-    }
-
     .job-title, .project-title {
       font-size: 1.2rem;
       font-weight: bold;
-      color: #2c3e50;
+      color: #ffffff;
     }
 
     .job-time {
       font-style: italic;
-      color: #7f8c8d;
+      color: #b0bec5;
     }
 
     ul li {
@@ -91,11 +87,49 @@
 
     a {
       text-decoration: none;
-      color: #2980b9;
+      color: #64ffda;
     }
 
     a:hover {
       text-decoration: underline;
+    }
+
+    .project a {
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    .project a:hover {
+      color: #03dac6;
+    }
+
+    .tooltip {
+      display: none;
+      position: relative;
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      border-radius: 6px;
+      margin-top: 5px;
+      font-size: 0.9rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .project:hover .tooltip {
+      display: block;
+    }
+
+    img.icon {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 8px;
     }
   </style>
 </head>
@@ -103,7 +137,7 @@
 <body>
   <div class="container">
     <header>
-      <h1>Kriva Shah</h1>
+      <h1><i class="fas fa-robot"></i> Kriva Shah</h1>
       <p>
         <a href="mailto:krivayogeshshah@gmail.com"><i class="fas fa-envelope"></i> Email</a>
         <a href="https://www.linkedin.com/in/kriva-shah" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
@@ -163,29 +197,26 @@
     <section>
       <h2><i class="fas fa-code"></i> Projects</h2>
       <div class="project">
-        <p class="project-title">MedBot: AI-Powered Medical Assistant — <a href="#">View Project</a></p>
-        <ul>
-          <li>Processed 500+ medical docs for 90% accurate symptom analysis using LangChain & Pinecone.</li>
-          <li>Deployed on AWS with CI/CD & Docker, maintaining 99% uptime and 30% cost savings.</li>
-          <li>Trained LLM from scratch with 12-layer transformer achieving 85% diagnosis accuracy.</li>
-        </ul>
+        <p class="project-title"><a onclick="toggleTooltip('medbot')">MedBot: AI-Powered Medical Assistant</a></p>
+        <div id="medbot" class="tooltip">Semantic search over 500+ documents, 85% accurate diagnosis, deployed with CI/CD and Docker.</div>
       </div>
       <div class="project">
-        <p class="project-title">Stock Price Prediction — <a href="#">View Project</a></p>
-        <ul>
-          <li>Developed LSTM-based model for forecasting stock prices with 78% improved accuracy.</li>
-          <li>Utilized regularization and dropout to prevent overfitting.</li>
-        </ul>
+        <p class="project-title"><a onclick="toggleTooltip('stock')">Stock Price Prediction</a></p>
+        <div id="stock" class="tooltip">Used LSTM to model long-term dependencies in stock market time series with 78% improved accuracy.</div>
       </div>
       <div class="project">
-        <p class="project-title">Bank Reconciliation — <a href="#">View Project</a></p>
-        <ul>
-          <li>Automated debit-credit reconciliation for CAs with 99% reduction in manual work.</li>
-          <li>Implemented O(n) set-theory algorithm reducing processing time by 90%.</li>
-        </ul>
+        <p class="project-title"><a onclick="toggleTooltip('bank')">Bank Reconciliation</a></p>
+        <div id="bank" class="tooltip">O(n) mismatch detection algorithm automating CA debit-credit workflows with 90% time savings.</div>
       </div>
     </section>
   </div>
+
+  <script>
+    function toggleTooltip(id) {
+      const tool = document.getElementById(id);
+      tool.style.display = tool.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
 </body>
 
 </html>
