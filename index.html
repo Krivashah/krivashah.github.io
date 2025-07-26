@@ -2,152 +2,157 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Riya Shah | AI & DS Engineer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KRIVA | AI & DS Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
     body {
       margin: 0;
-      font-family: 'Space Grotesk', sans-serif;
-      background: radial-gradient(ellipse at top, #0d1b2a 0%, #000000 100%);
-      color: #f1f1f1;
-      background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
-      background-size: cover;
-      background-attachment: fixed;
-      background-position: center;
-    }
-
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.85);
-      padding: 2rem;
-      min-height: 100vh;
+      font-family: 'Quicksand', sans-serif;
+      background: radial-gradient(ellipse at bottom, #0d1b2a 0%, #1b263b 70%, #415a77 100%);
+      color: #f8f9fa;
+      overflow-x: hidden;
     }
 
     header {
       text-align: center;
-      padding-top: 2rem;
+      padding: 3rem 1rem;
+      background: linear-gradient(to bottom, #1b263b 40%, transparent);
     }
 
-    header h1 {
+    h1 {
+      font-family: 'Orbitron', sans-serif;
       font-size: 3rem;
-      color: #ffc0cb;
+      color: #e0aaff;
+      animation: glow 2s ease-in-out infinite alternate;
     }
 
-    header p {
-      font-size: 1.3rem;
-      color: #dcd6f7;
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #e0aaff;
+      }
+      to {
+        text-shadow: 0 0 20px #e0aaff, 0 0 30px #c77dff;
+      }
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #dee2e6;
+      max-width: 600px;
+      margin: 1rem auto;
     }
 
     section {
-      margin: 2rem 0;
-      padding: 1.5rem;
-      background: rgba(255, 255, 255, 0.05);
-      border-left: 5px solid #d291bc;
+      margin: 2rem auto;
+      padding: 2rem;
+      max-width: 900px;
+      background: rgba(255, 255, 255, 0.03);
       border-radius: 12px;
-      box-shadow: 0 0 20px rgba(210, 145, 188, 0.4);
-      transition: transform 0.3s;
-    }
-
-    section:hover {
-      transform: scale(1.02);
+      box-shadow: 0 0 20px rgba(192, 132, 252, 0.1);
     }
 
     h2 {
-      color: #fcb0b3;
+      font-family: 'Orbitron', sans-serif;
+      color: #c77dff;
+      border-bottom: 2px solid #c77dff;
+      padding-bottom: 0.5rem;
     }
 
-    a {
-      color: #ffd6e8;
-      text-decoration: none;
+    .project {
+      cursor: pointer;
+      margin: 1rem 0;
+      padding: 1rem;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      transition: transform 0.3s ease, background 0.3s;
     }
 
-    a:hover {
-      text-decoration: underline;
+    .project:hover {
+      transform: scale(1.02);
+      background: rgba(255, 255, 255, 0.1);
     }
 
-    .project-description {
+    .description {
       display: none;
-      margin-top: 10px;
-      color: #e0e0f0;
+      margin-top: 0.5rem;
+      color: #ffc9e3;
+      font-size: 0.95rem;
     }
 
-    .project:hover .project-description {
-      display: block;
-      animation: fadeIn 0.5s ease-in-out;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-5px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    .icon {
-      margin-right: 0.5rem;
-      color: #ff7eb3;
+    .icons span {
+      margin-right: 10px;
+      color: #ff9de2;
     }
 
     footer {
       text-align: center;
       padding: 2rem;
       font-size: 0.9rem;
-      color: #aaa;
+      color: #adb5bd;
     }
   </style>
 </head>
 
 <body>
-  <div class="overlay">
-    <header>
-      <h1>🌌 Riya Shah</h1>
-      <p>AI & Data Science Engineer | Stargazing Coder 👩🏻‍💻✨</p>
-    </header>
+  <header>
+    <h1>KRIVA 🌌</h1>
+    <p>AI & Data Science Engineer | Creating intelligent systems that shine through the cosmos 💫</p>
+  </header>
 
-    <section>
-      <h2><i class="fas fa-code icon"></i>About Me</h2>
-      <p>Hey there! I'm Riya 💫 — a techie with a passion for AI, data storytelling, and a splash of pink cosmic flair. Whether it's engineering predictive models or making neural networks sparkle, I bring a blend of science and soul to every project.</p>
-    </section>
+  <section>
+    <h2><span class="icons">🚀</span>About Me</h2>
+    <p>
+      I'm KRIVA, a passionate AI & Data Science Engineer with a love for all things space, sparkly, and smart. I bring algorithms to life, design elegant models, and craft intelligent solutions that are both functional and fabulous.
+    </p>
+  </section>
 
-    <section>
-      <h2><i class="fas fa-bolt icon"></i>Projects</h2>
-      <div class="project">
-        <p><strong>🌿 Generative Medical AI Bot</strong></p>
-        <div class="project-description">Built using Gemini API + Pinecone DB to help patients ask questions about their health 💡</div>
-      </div>
-      <div class="project">
-        <p><strong>📈 Stock Price Prediction</strong></p>
-        <div class="project-description">Used LSTM models with TensorFlow and clever preprocessing to predict market trends 📊</div>
-      </div>
-      <div class="project">
-        <p><strong>👩🏻‍🏫 AI Tutor for Kids</strong></p>
-        <div class="project-description">Built workshops for middle schoolers using fun interactive modules! 🎨🤖</div>
-      </div>
-    </section>
+  <section>
+    <h2><span class="icons">🛠️</span>Projects</h2>
+    <div class="project" onclick="toggleDescription(this)">
+      🌠 <strong>Galaxy Classifier</strong>
+      <div class="description">A convolutional neural network trained to classify spiral, elliptical, and irregular galaxies using Hubble data. Includes preprocessing pipeline and model interpretability features.</div>
+    </div>
+    <div class="project" onclick="toggleDescription(this)">
+      🌙 <strong>Moonshot Recommender</strong>
+      <div class="description">Built a hybrid recommender for a space-themed e-learning platform using collaborative filtering + NLP-based content modeling.</div>
+    </div>
+    <div class="project" onclick="toggleDescription(this)">
+      💡 <strong>Stellar Bot</strong>
+      <div class="description">A generative AI chatbot designed for health queries. Integrated Gemini API and vector DBs for fast, reliable responses.</div>
+    </div>
+  </section>
 
-    <section>
-      <h2><i class="fas fa-graduation-cap icon"></i>Education</h2>
-      <p>🎓 B.Tech in Artificial Intelligence & Data Science from XYZ University</p>
-      <p>📚 Courses: Advanced Learning Algorithms, Neural Networks, Data Structures & More</p>
-    </section>
+  <section>
+    <h2><span class="icons">📚</span>Skills</h2>
+    <p>✨ Python, SQL, TensorFlow, Scikit-learn, Pandas, React, MongoDB</p>
+    <p>🪐 Machine Learning, Deep Learning, NLP, Data Visualization</p>
+    <p>💖 Human-AI Interaction, Creative Coding, Explainable AI</p>
+  </section>
 
-    <section>
-      <h2><i class="fas fa-rocket icon"></i>Skills</h2>
-      <p>✨ Python, TensorFlow, Scikit-learn, SQL</p>
-      <p>🛠 React.js, Node.js, MongoDB</p>
-      <p>🎨 Data Visualization, Tableau, Communication</p>
-    </section>
+  <section>
+    <h2><span class="icons">🎓</span>Education</h2>
+    <p>
+      B.Tech in Artificial Intelligence & Data Science <br />
+      📍 India | Ongoing
+    </p>
+  </section>
 
-    <section>
-      <h2><i class="fas fa-envelope icon"></i>Contact</h2>
-      <p>📧 <a href="mailto:riya.shah@email.com">riya.shah@email.com</a></p>
-      <p>💼 <a href="https://www.linkedin.com/in/riyashah" target="_blank">LinkedIn</a> | 🌐 <a href="https://github.com/riyashah" target="_blank">GitHub</a></p>
-    </section>
+  <footer>
+    Made with 🌟 and a splash of stardust by KRIVA<br />
+    Let's connect: ✉️ <a href="mailto:kriva@example.com" style="color: #ffbde2;">kriva@example.com</a>
+  </footer>
 
-    <footer>
-      <p>Made with 💜 in the cosmos</p>
-    </footer>
-  </div>
+  <script>
+    function toggleDescription(el) {
+      const desc = el.querySelector('.description');
+      desc.style.display = desc.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
 </body>
 
 </html>
