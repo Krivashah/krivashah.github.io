@@ -6,86 +6,96 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kriva Shah | AI & Data Science Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKB4Imkb9z+zZr7+tGkWQK3N5SQUgH9XG1ZJ4J1nG9X8bJ+d2Yq6drRh+YZ6K1/x2nKGl3P0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
-    * {
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #fdfbfb, #ebedee);
+      color: #333;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-      font-family: 'Roboto', sans-serif;
-    }
-
-    body {
-      background-color: #f7f9fc;
-      color: #333;
-      line-height: 1.6;
-      padding: 40px 20px;
     }
 
     .container {
-      max-width: 1000px;
+      max-width: 1100px;
       margin: auto;
+      padding: 40px 20px;
     }
 
     header {
       text-align: center;
-      margin-bottom: 40px;
+      margin-bottom: 50px;
     }
 
     header h1 {
-      font-size: 2.5rem;
-      color: #222;
+      font-size: 3rem;
+      color: #2c3e50;
     }
 
-    header p {
-      font-size: 1rem;
-      color: #555;
-    }
-
-    a {
-      color: #0077cc;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
+    header p a {
+      color: #2980b9;
+      margin: 0 10px;
+      font-size: 1.1rem;
     }
 
     section {
-      margin-bottom: 40px;
+      margin-bottom: 50px;
+      padding: 20px;
+      border-radius: 12px;
+      background-color: #ffffff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
     }
 
     h2 {
       font-size: 1.8rem;
-      border-bottom: 2px solid #ccc;
-      margin-bottom: 10px;
-      padding-bottom: 5px;
+      color: #34495e;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
 
-    ul {
-      list-style: none;
+    h2 i {
+      color: #3498db;
+    }
+
+    .skills-list span {
+      background: #3498db;
+      color: #fff;
+      border-radius: 20px;
+      padding: 6px 12px;
+      margin: 5px;
+      display: inline-block;
+      font-size: 0.9rem;
     }
 
     .job, .project {
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
 
-    .job-title {
+    .job-title, .project-title {
+      font-size: 1.2rem;
       font-weight: bold;
-      font-size: 1.1rem;
+      color: #2c3e50;
     }
 
     .job-time {
       font-style: italic;
-      color: #666;
+      color: #7f8c8d;
     }
 
-    .skills-list span {
-      background: #e3e3e3;
-      border-radius: 4px;
-      padding: 5px 10px;
-      margin: 5px;
-      display: inline-block;
-      font-size: 0.9rem;
+    ul li {
+      margin-left: 20px;
+      margin-top: 6px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #2980b9;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -95,14 +105,14 @@
     <header>
       <h1>Kriva Shah</h1>
       <p>
-        <a href="mailto:krivayogeshshah@gmail.com">krivayogeshshah@gmail.com</a> |
-        <a href="https://www.linkedin.com/in/kriva-shah" target="_blank">LinkedIn</a> |
-        <a href="https://github.com/Krivashah" target="_blank">GitHub</a>
+        <a href="mailto:krivayogeshshah@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+        <a href="https://www.linkedin.com/in/kriva-shah" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/Krivashah" target="_blank"><i class="fab fa-github"></i> GitHub</a>
       </p>
     </header>
 
     <section>
-      <h2>Summary</h2>
+      <h2><i class="fas fa-user"></i> Summary</h2>
       <p>
         AI & Data Science engineer leveraging Gen AI, machine learning, and scalable cloud solutions to solve real-world challenges.
         Boosted startup efficiency by 23% using predictive AI tools, optimized systems via Linux/Docker, and implemented end-to-end automation pipelines.
@@ -111,14 +121,14 @@
     </section>
 
     <section>
-      <h2>Education</h2>
+      <h2><i class="fas fa-graduation-cap"></i> Education</h2>
       <p><strong>University of Mumbai</strong> — B.Tech in Artificial Intelligence and Data Science (2023–2027)<br>
         <em>CGPA: 3.9/4.0</em></p>
       <p><strong>Relevant Courses:</strong> DSA, Reinforcement Learning, AI Strategy Integration, Digital Systems, Advanced DBMS, Applied Mathematics</p>
     </section>
 
     <section>
-      <h2>Skills</h2>
+      <h2><i class="fas fa-tools"></i> Skills</h2>
       <div class="skills-list">
         <span>LLMs</span><span>TensorFlow</span><span>PyTorch</span><span>NLP/ASR</span><span>XGBoost</span><span>LSTM</span>
         <span>Kubernetes</span><span>Docker</span><span>Firebase</span><span>Hadoop</span>
@@ -129,7 +139,7 @@
     </section>
 
     <section>
-      <h2>Professional Experience</h2>
+      <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
       <div class="job">
         <p class="job-title">Generative AI Intern — Saukhyam Foundation, Mumbai</p>
         <p class="job-time">June 2024 – Dec 2024</p>
@@ -151,9 +161,9 @@
     </section>
 
     <section>
-      <h2>Projects</h2>
+      <h2><i class="fas fa-code"></i> Projects</h2>
       <div class="project">
-        <p><strong>MedBot: AI-Powered Medical Assistant</strong> — <a href="#">Link</a></p>
+        <p class="project-title">MedBot: AI-Powered Medical Assistant — <a href="#">View Project</a></p>
         <ul>
           <li>Processed 500+ medical docs for 90% accurate symptom analysis using LangChain & Pinecone.</li>
           <li>Deployed on AWS with CI/CD & Docker, maintaining 99% uptime and 30% cost savings.</li>
@@ -161,14 +171,14 @@
         </ul>
       </div>
       <div class="project">
-        <p><strong>Stock Price Prediction</strong> — <a href="#">Link</a></p>
+        <p class="project-title">Stock Price Prediction — <a href="#">View Project</a></p>
         <ul>
           <li>Developed LSTM-based model for forecasting stock prices with 78% improved accuracy.</li>
           <li>Utilized regularization and dropout to prevent overfitting.</li>
         </ul>
       </div>
       <div class="project">
-        <p><strong>Bank Reconciliation</strong> — <a href="#">Link</a></p>
+        <p class="project-title">Bank Reconciliation — <a href="#">View Project</a></p>
         <ul>
           <li>Automated debit-credit reconciliation for CAs with 99% reduction in manual work.</li>
           <li>Implemented O(n) set-theory algorithm reducing processing time by 90%.</li>
