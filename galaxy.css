@@ -1,0 +1,11 @@
+css
+.hero .intro h2 {
+  font-size: 2rem;
+  color: #ff99cc;
+  animation: floatText 3s ease-in-out infinite;
+}
+
+@keyframes floatText {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
