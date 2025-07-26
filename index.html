@@ -1,158 +1,38 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KRIVA | AI & DS Engineer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Quicksand', sans-serif;
-      background: radial-gradient(ellipse at bottom, #0d1b2a 0%, #1b263b 70%, #415a77 100%);
-      color: #f8f9fa;
-      overflow-x: hidden;
-    }
-
-    header {
-      text-align: center;
-      padding: 3rem 1rem;
-      background: linear-gradient(to bottom, #1b263b 40%, transparent);
-    }
-
-    h1 {
-      font-family: 'Orbitron', sans-serif;
-      font-size: 3rem;
-      color: #e0aaff;
-      animation: glow 2s ease-in-out infinite alternate;
-    }
-
-    @keyframes glow {
-      from {
-        text-shadow: 0 0 10px #e0aaff;
-      }
-      to {
-        text-shadow: 0 0 20px #e0aaff, 0 0 30px #c77dff;
-      }
-    }
-
-    p {
-      font-size: 1.2rem;
-      color: #dee2e6;
-      max-width: 600px;
-      margin: 1rem auto;
-    }
-
-    section {
-      margin: 2rem auto;
-      padding: 2rem;
-      max-width: 900px;
-      background: rgba(255, 255, 255, 0.03);
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(192, 132, 252, 0.1);
-    }
-
-    h2 {
-      font-family: 'Orbitron', sans-serif;
-      color: #c77dff;
-      border-bottom: 2px solid #c77dff;
-      padding-bottom: 0.5rem;
-    }
-
-    .project {
-      cursor: pointer;
-      margin: 1rem 0;
-      padding: 1rem;
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: 10px;
-      transition: transform 0.3s ease, background 0.3s;
-    }
-
-    .project:hover {
-      transform: scale(1.02);
-      background: rgba(255, 255, 255, 0.1);
-    }
-
-    .description {
-      display: none;
-      margin-top: 0.5rem;
-      color: #ffc9e3;
-      font-size: 0.95rem;
-    }
-
-    .icons span {
-      margin-right: 10px;
-      color: #ff9de2;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      color: #adb5bd;
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/galaxy.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
-
 <body>
   <header>
-    <h1>KRIVA 🌌</h1>
-    <p>AI & Data Science Engineer | Creating intelligent systems that shine through the cosmos 💫</p>
+    <h1 class="glow">KRIVA</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section>
-    <h2><span class="icons">🚀</span>About Me</h2>
-    <p>
-      I'm KRIVA, a passionate AI & Data Science Engineer with a love for all things space, sparkly, and smart. I bring algorithms to life, design elegant models, and craft intelligent solutions that are both functional and fabulous.
-    </p>
-  </section>
-
-  <section>
-    <h2><span class="icons">🛠️</span>Projects</h2>
-    <div class="project" onclick="toggleDescription(this)">
-      🌠 <strong>Galaxy Classifier</strong>
-      <div class="description">A convolutional neural network trained to classify spiral, elliptical, and irregular galaxies using Hubble data. Includes preprocessing pipeline and model interpretability features.</div>
+  <section class="hero">
+    <div class="intro">
+      <h2>🚀 Exploring the Universe of AI & Data Science</h2>
+      <p>I build intelligent systems with empathy and elegance 🌸</p>
     </div>
-    <div class="project" onclick="toggleDescription(this)">
-      🌙 <strong>Moonshot Recommender</strong>
-      <div class="description">Built a hybrid recommender for a space-themed e-learning platform using collaborative filtering + NLP-based content modeling.</div>
-    </div>
-    <div class="project" onclick="toggleDescription(this)">
-      💡 <strong>Stellar Bot</strong>
-      <div class="description">A generative AI chatbot designed for health queries. Integrated Gemini API and vector DBs for fast, reliable responses.</div>
-    </div>
-  </section>
-
-  <section>
-    <h2><span class="icons">📚</span>Skills</h2>
-    <p>✨ Python, SQL, TensorFlow, Scikit-learn, Pandas, React, MongoDB</p>
-    <p>🪐 Machine Learning, Deep Learning, NLP, Data Visualization</p>
-    <p>💖 Human-AI Interaction, Creative Coding, Explainable AI</p>
-  </section>
-
-  <section>
-    <h2><span class="icons">🎓</span>Education</h2>
-    <p>
-      B.Tech in Artificial Intelligence & Data Science <br />
-      📍 India | Ongoing
-    </p>
   </section>
 
   <footer>
-    Made with 🌟 and a splash of stardust by KRIVA<br />
-    Let's connect: ✉️ <a href="mailto:kriva@example.com" style="color: #ffbde2;">kriva@example.com</a>
+    <p>Crafted with 💫 by KRIVA</p>
   </footer>
 
-  <script>
-    function toggleDescription(el) {
-      const desc = el.querySelector('.description');
-      desc.style.display = desc.style.display === 'block' ? 'none' : 'block';
-    }
-  </script>
+  <script src="js/main.js"></script>
 </body>
-
 </html>
